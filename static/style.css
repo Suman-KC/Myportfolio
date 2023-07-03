@@ -74,8 +74,15 @@ dav .logo{
     font-size: 61px;
     color:#f44336;
     transition:1s;
+    animation: anime 1s ease-in-out 1s infinite alternate;
+    
  
 }
+@keyframes anime {
+    0%   {margin-left:-20px;color:#04AA6D;}
+    100% {margin-left:0px;color:  red;}
+  }
+
 .text-box p{
     margin: 10px 0px 40px;
     font-size:30px;
@@ -136,7 +143,15 @@ section .about .about-section{
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
   color: white; /* White text color */
+  animation: example 5s;
+
 }
+@keyframes example {
+    0%   {width:0%;}
+    25%  {width:25%;}
+    50%  {width:50%;;}
+    100% {width:75%;}
+  }
 
 .html {width: 90%; background-color: #04AA6D;} /* Green */
 .css {width: 80%; background-color: #2196F3;} /* Blue */
@@ -146,7 +161,8 @@ section .about .image-section{
    height: 500px;
    width: 500px;
    margin: 10px;
-   flex:1'
+   
+  
 }
 
 .image-section img{
@@ -155,12 +171,18 @@ section .about .image-section{
     object-fit: cover;
     border:2px solid black;
     border-radius: 50%;
+    
 
 }
+
 @media (max-width:700px) {
 
     .text-box h1{
         font-size:30px;
+    }
+    .text-box p{
+        font-size:20px;
+        color:white;
     }
     .navlinks ul li{
         display: block;
@@ -192,7 +214,7 @@ section .about .image-section{
     }
     section .about {
     
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     section .about .image-section{
         height: 300px;
@@ -207,9 +229,7 @@ section .about .image-section{
         border-radius: 50%;
     
     }
-   .skills{
-    font-family: 10px;
-   }
+
 
 
 }
@@ -230,10 +250,14 @@ section .about .image-section{
 .social i{
     padding: 10px;
 }
+
+
 .portfolio-card-img{
-    object-fit: contain;
+    object-fit: cover;
     width: 300px;
     height:300px;
+
+
 }
 .footer p{
     background-color: bisque;
@@ -245,10 +269,24 @@ section .about .image-section{
 .mydivstyle:hover{
     box-shadow:0 0 20px 0 rgba(0,0,0,3);
     transform:translateY(-10px);
+    background-color: azure;
 
 }
+@keyframes image {
+    0%   {    background-color: azure;}
+    100% {  background-color: #fff  ;}
+  }
 .row .transform:hover{
+    
+    animation: image 2s  infinite;
+}
+.row .transform a{
+    text-decoration: none;
+    color:black
+}
+.row .transform:hover{
+    background-color: azure;
     box-shadow:0 0 20px 0 rgba(0,0,0,3);
-    transform:translateY(-10px);
+    transform:translateY(-5px);
 
 }
