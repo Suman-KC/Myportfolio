@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('/images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* , */
+dav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background:light;
+
+
+  
+  
+    
+    /* background-color: lavender rgba(4,9,30,0.7); */
+}
+dav .logo{
+    width:150px;
+    text-decoration: none;
+    color:blue;
+    font-size: 2rem;
+}
+.navlinks{
+    flex:1;
+    text-align:right;
+
+
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color:white;
+    font-size:13px;
+}
+.navlinks ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin:auto;
+    transition:0.5s;
+}
+.navlinks ul li:hover::after{
+    width:100%;
+
+}
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: 0.5s;
+}
+.text-box h1{
+    font-size: 61px;
+    color:#f44336;
+    transition:1s;
+ 
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size:30px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+dav .fa{
+    display: none;
+}
+
+.about-sec{
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('/images/img-1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+section .about{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 2px;
+    padding: 10px;
+   }
+section .about .about-section{
+    flex:1;
+    color: #fff;
+    text-shadow: #f44336;
+}
+/* Make sure that padding behaves as expected */
+
+/* Container for skill bars */
+.containerskill {
+  width: 100%; /* Full width */
+  background-color: bisque; /* Grey background */
+  padding: 5px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;margin-bottom: 5px;} /* Dark Grey */
+section .about .image-section{
+   height: 500px;
+   width: 500px;
+   margin: 10px;
+   flex:1'
+}
+
+.image-section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border:2px solid black;
+    border-radius: 50%;
+
+}
+@media (max-width:700px) {
+
+    .text-box h1{
+        font-size:30px;
+    }
+    .navlinks ul li{
+        display: block;
+    }
+    .navlinks{
+        position:absolute;
+        background: #f44336;
+        height: 100vh;
+        width:0%;
+        top:0;
+        right:0;
+        text-align:left;
+        z-index: 2;
+        transition:1s;
+        overflow: hidden;
+
+
+
+    }
+    dav .fa{
+        display: block;
+        color:#fff;
+        margin:10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navlinks ul{
+        padding: 30px;
+    }
+    section .about {
+    
+        flex-direction: column;
+    }
+    section .about .image-section{
+        height: 300px;
+        width: 300px;
+        margin: 20px;
+     }
+    .image-section img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border:2px solid black;
+        border-radius: 50%;
+    
+    }
+   .skills{
+    font-family: 10px;
+   }
+
+
+}
+.footer{
+    margin: 10px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.social a{
+    text-decoration: none;
+    color:black;
+
+}
+.social i{
+    padding: 10px;
+}
+.portfolio-card-img{
+    object-fit: contain;
+    width: 300px;
+    height:300px;
+}
+.footer p{
+    background-color: bisque;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.mydivstyle:hover{
+    box-shadow:0 0 20px 0 rgba(0,0,0,3);
+    transform:translateY(-10px);
+
+}
+.row .transform:hover{
+    box-shadow:0 0 20px 0 rgba(0,0,0,3);
+    transform:translateY(-10px);
+
+}
