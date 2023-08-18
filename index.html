@@ -195,8 +195,8 @@
        <input type="checkbox" class="form-check-input" id="exampleCheck1">
        <label class="form-check-label" for="exampleCheck1">Check me out</label>
      </div>
-     <div class="form-group">
-     <button type="submit" class="btn btn-success center mt-2 p-3 rounded">Submit</button>
+     <div class="form-group" id="textbar">
+     <button onclick="callme()" type="submit" class="btn btn-success center mt-2 p-3 rounded">Submit</button>
     </div>
    </form>
   </div>
@@ -230,6 +230,10 @@
         function hideMenu(){
             navlinks.style.width="0%";
         }
+	    function clickme(){
+		    text=document.getElementById("textbar");
+		    text.innerHtml="Thanks for submitting form";
+	    }
 
     </script>
 
